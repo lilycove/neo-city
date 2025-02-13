@@ -1,0 +1,204 @@
+body {
+    background-image: url(images/layout/bg-2.gif);
+    font-family: 'Oldenburg', 'Kosugi Maru', sans-serif;
+    color: rgb(22, 36, 75);
+}
+
+
+html {
+    scrollbar-color: #eaf2ff rgb(255, 255, 255);
+    scrollbar-width: thin;
+  }
+
+.side-title {
+    font-family: 'Borel', 'Send Flowers', sans-serif;
+    margin: 0.5em;
+    font-size: 1em;
+    color: rgb(173, 223, 243);
+    text-shadow: #fff 0px 0px 2px;
+    font-weight: bold;
+}
+
+.layout {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: 9em;
+    margin-bottom: 9em;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 1em;
+    align-items: center;
+}
+
+/*-- lace --*/
+
+.lace-top {
+    background:url(images/ribbons/ribbon-blue-5.gif);
+    display: block;
+    background-repeat: repeat-x;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0; 
+    width: 100%;
+}
+
+.lace-bottom {
+    background:url(images/ribbons/ribbon-blue-5.gif);
+    display: block;
+    background-repeat: repeat-x;
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+    left: 0; 
+    width: 100%;
+    rotate: 180deg;
+}
+
+/*lace box side-bar*/
+
+.top {
+background:url(images/layout/frame-white-1/f-ue.gif) repeat-x;
+height:23px;
+margin:0 23px
+}
+
+.bottom {
+background:url(images/layout/frame-white-1/f-sita.gif) repeat-x;
+height:23px;
+margin:0 23px
+}
+
+.box-top {
+background-image:url(images/layout/frame-white-1/f-kado1.gif), url(images/layout/frame-white-1/f-kado2.gif);
+background-position:top left, top right;
+background-repeat:no-repeat, no-repeat;
+height:23px
+}
+
+.box-center {
+background-image:url(images/layout/frame-white-1/f-migi.gif), url(images/layout/frame-white-1/f-hidari.gif);
+background-position:top right, top left;
+background-repeat:repeat-y, repeat-y
+}
+
+.box-inner {
+background:#fff; /* 背景色 */
+margin:0 23px
+}
+
+.box-bottom {
+background-image:url(images/layout/frame-white-1/f-kado3.gif), url(images/layout/frame-white-1/f-kado4.gif);
+background-position:top left, top right;
+background-repeat:no-repeat, no-repeat;
+height:23px
+}
+
+/*-- end lace box sidebar --*/
+
+/*left*/
+
+.left {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 auto; /* 中央寄せは0をautoに変更 */
+    width: 200px;
+    justify-content: center;
+    height:550px;
+    }
+
+.line-lace {
+    display: flex;
+    margin: 0 auto;
+    padding: 0.3em;
+    justify-content: center;
+    align-items: center;  
+}
+
+.nav-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 1em;
+}
+
+.nav-area {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    justify-content: center;
+
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 1em;
+}
+
+.calendar, .news-blurb {
+    font-size: 0.6em;
+    text-align: justify;
+}
+
+.calendar {
+    font-weight: bold;
+}
+
+.side-title {
+    text-align: center;
+}
+
+/*-- end left --*/
+
+/* -- main -- */
+
+
+
+.center {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 900px;
+    justify-content: center;
+
+    border-width:45px;
+    padding:10px;
+    height:450px;
+    overflow-y:auto;
+    border-style:solid;
+    border-image: url("images/layout/pf035-plate-j06.gif") 55 fill round;
+}
+
+footer {
+    margin-top: auto;
+    font-size: 0.5em;
+    font-family: 'Borel', 'Send Flowers', sans-serif;
+}
+
+/*--right--*/
+
+.right {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 auto; /* 中央寄せは0をautoに変更 */
+    margin-left: -2em;
+    width: 200px;
+    justify-content: center;
+    order: 1;
+    z-index: -9999;
+    height:550px;
+    
+    
+    }
+    
