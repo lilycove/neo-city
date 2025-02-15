@@ -40,7 +40,7 @@ font-style: italic;
 
 .layout {
 display: flex;
-flex-wrap: nowrap;
+flex-wrap: wrap;
 justify-content: center;
 align-items: center;
 max-width: 1500px;
@@ -55,15 +55,13 @@ flex-direction: row;
 flex-wrap: nowrap;
 width: 100%;
 gap: 1em;
-align-items: center;
-justify-content: center;
-
 border-width:45px;
 padding:10px;
 height: 600px;
 border-style:solid;
 border-image: url("images/layout/pf035-plate-j06.gif") 55 fill round;
 }
+
 
 /*laces*/
 
@@ -207,6 +205,12 @@ height:450px;
 overflow-y:auto;
 border-style:solid;
 border-image: url("images/layout/pf034-plate-i04.gif") 55 fill round;
+}
+
+.center-box {
+display: block;
+flex-wrap: wrap;
+justify-content: center;
 }
 
 footer {
